@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="668.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.creditsController">
+   <children>
+      <ImageView fitHeight="668.0" fitWidth="979.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@creditBackground.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="52.0" layoutY="68.0" prefHeight="49.0" prefWidth="161.0" text="CREATED BY:" underline="true">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="142.0" prefHeight="49.0" prefWidth="527.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="117.0" prefHeight="35.0" prefWidth="572.0" text="MUSHTARI SADIA &amp; FARDIN HOSSAIN">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="152.0" prefHeight="35.0" prefWidth="326.0" text="STUDENT">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="187.0" prefHeight="35.0" prefWidth="194.0" text="LEVEL-1 ; TERM-2">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="222.0" prefHeight="35.0" prefWidth="527.0" text="B.Sc IN COMPUTER SCIENCE AND ENGINEERING">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="257.0" prefHeight="35.0" prefWidth="703.0" text="BANGLADESH UNIVERSITY OF ENGINEERING AND TECHNOLOGY">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="317.0" prefHeight="35.0" prefWidth="346.0" text="SOFTWARE PLATFORM: JAVAFX">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="384.0" text="PROJECT SUPERVISOR:" underline="true">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="438.0" text="SHADMAN SAQIB EUSUF">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="473.0" text="LECTURER">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="508.0" prefHeight="35.0" prefWidth="642.0" text="DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="543.0" prefHeight="35.0" prefWidth="735.0" text="BANGLADESH UNIVERSITY OF ENGINEERING AND TECHNOLOGY">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="59.0" layoutY="601.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="51.0" prefWidth="144.0" style="-fx-background-color: #000000;" text="GO BACK" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

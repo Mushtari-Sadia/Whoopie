@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<StackPane fx:id="parentStack" maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0" styleClass="bodybg" stylesheets="@.bodybg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerTTT">
+    <children>
+        <Line fx:id="line" endX="100.0" startX="-100.0" stroke="#800105" strokeLineCap="ROUND" strokeWidth="7.0" visible="false" />
+        <GridPane fx:id="gridPane" gridLinesVisible="true" maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0">
+            <children>
+                <StackPane fx:id="stack1" onMousePressed="#handleMouseClick" prefHeight="150.0" prefWidth="200.0" />
+                <StackPane fx:id="stack9" layoutX="10.0" layoutY="10.0" onMousePressed="#handleMouseClick" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <StackPane fx:id="stack8" layoutX="10.0" layoutY="10.0" onMousePressed="#handleMouseClick" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <StackPane fx:id="stack7" layoutX="10.0" layoutY="10.0" onMousePressed="#handleMouseClick" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                <StackPane fx:id="stack6" layoutX="10.0" layoutY="10.0" onMousePressed="#handleMouseClick" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <StackPane fx:id="stack5" layoutX="10.0" layoutY="10.0" onMousePressed="#handleMouseClick" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <StackPane fx:id="stack4" layoutX="10.0" layoutY="10.0" onMousePressed="#handleMouseClick" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                <StackPane fx:id="stack3" layoutX="10.0" layoutY="10.0" onMousePressed="#handleMouseClick" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" />
+                <StackPane fx:id="stack2" layoutX="10.0" layoutY="10.0" onMousePressed="#handleMouseClick" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <effect>
+                <SepiaTone />
+            </effect>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+    </children>
+</StackPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="850.0" prefWidth="1191.0" styleClass="instructions" stylesheets="@.instructions.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.instructionsTTTController">
+   <children>
+      <TextArea editable="false" layoutX="130.0" layoutY="176.0" prefHeight="526.0" prefWidth="907.0" style="-fx-background-color: #E885EF;" text="Tic Tac Toe is a multiplayer game played in the same machine.&#10;&#10;In this game, you will compete against your friend in the same machine.&#10;&#10;1. The game is played on a grid that's 3 squares by 3 squares.&#10;&#10;2. You are X, your friend is O. Players take turns putting their marks in empty squares.&#10;&#10;3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.&#10;&#10;4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="286.0" layoutY="78.0" prefHeight="65.0" prefWidth="620.0" text="Instructions for Tic Tac Toe">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="36.0" layoutY="744.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #000000;" text="GO BACK" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

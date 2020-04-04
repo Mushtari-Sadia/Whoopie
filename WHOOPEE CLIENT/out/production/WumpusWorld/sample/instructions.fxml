@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="585.0" prefWidth="902.0" styleClass="instructions" stylesheets="@.instructions.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.instructionsController">
+   <children>
+      <Button layoutX="205.0" layoutY="103.0" mnemonicParsing="false" onAction="#ticTacToeClicked" prefHeight="98.0" prefWidth="492.0" style="-fx-background-color: #EC160C;" text="INSTRUCTIONS FOR TIC TAC TOE" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="176.0" layoutY="220.0" mnemonicParsing="false" onAction="#wumpusWorldClicked" prefHeight="87.0" prefWidth="551.0" style="-fx-background-color: #03C2F1;" text="INSTRUCTIONS FOR WUMPUS WORLD" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="259.0" layoutY="318.0" mnemonicParsing="false" onAction="#unoClicked" prefHeight="87.0" prefWidth="384.0" style="-fx-background-color: #08F373;" text="INSTRUCTIONS FOR UNO" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="66.0" layoutY="481.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="63.0" prefWidth="135.0" style="-fx-background-color: #000000;" text="GO BACK" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

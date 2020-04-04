@@ -1,0 +1,4 @@
+.wumpusBackground{
+    -fx-background-image: url("creditsBackGround.jpeg");
+    -fx-background-size: 100% 100%;
+}

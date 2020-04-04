@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="791.0" prefWidth="1157.0" styleClass="bodybg" stylesheets="@.bodybg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <left>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="791.0" prefWidth="328.0" spacing="20.0" styleClass="WUMPUSBG" stylesheets="@WUMPUSBG.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="turnCount" text="Turn Count: 0" textFill="#f2f2f2">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="currentPosition" text="Current Position: 0,0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="arrows" text="Arrows Left: 3" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="playerFacing" text="Player Facing: Down" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="alert" text="Alert: Nothing to worry." textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Label fx:id="shoot" text="Shoot: " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="wumpuslife" text="WumpusLife: Wumpus is still alive. " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="gameStatus" text="Game Status:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label />
+            <Button fx:id="turnLeft" mnemonicParsing="false" onAction="#turningLeft" prefHeight="43.0" prefWidth="128.0" text="TURN LEFT">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font></Button>
+            <Button fx:id="turnRight" mnemonicParsing="false" onAction="#turningRight" prefHeight="44.0" prefWidth="132.0" text="TURN RIGHT">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font></Button>
+            <Button fx:id="moveForward" mnemonicParsing="false" onAction="#movingForward" prefHeight="44.0" prefWidth="174.0" text="MOVE FORWARD">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font></Button>
+            <Button fx:id="shootArrow" mnemonicParsing="false" onAction="#shootArrow" prefHeight="47.0" prefWidth="160.0" text="SHOOT ARROW">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font></Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <GridPane fx:id="gridPane" alignment="CENTER" gridLinesVisible="true" styleClass="wumpusBackground" stylesheets="@.wumpusBackground.css" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="60.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <ImageView fx:id="img" fitHeight="74.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@down2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

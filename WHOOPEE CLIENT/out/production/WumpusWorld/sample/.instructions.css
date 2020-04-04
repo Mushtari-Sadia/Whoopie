@@ -1,0 +1,4 @@
+.instructions{
+    -fx-background-image: url("instructionBackground.jpg");
+    -fx-background-size: 100% 100%;
+}

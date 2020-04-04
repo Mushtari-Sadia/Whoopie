@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="551.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.flameController">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="801.0" layoutX="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@fire.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="178.0" layoutY="25.0" text="ALAS! YOU'VE FALLEN INSIDE THE FIRE!!" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="463.0" mnemonicParsing="false" onAction="#exitButtonClicked" prefHeight="57.0" prefWidth="107.0" style="-fx-background-color: #F00707;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

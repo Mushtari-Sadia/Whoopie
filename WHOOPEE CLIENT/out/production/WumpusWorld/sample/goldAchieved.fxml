@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.goldController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@congratulations-background-2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="143.0" fitWidth="201.0" layoutX="200.0" layoutY="126.0" pickOnBounds="true">
+         <image>
+            <Image url="@gold.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="13.0" layoutY="52.0" prefHeight="53.0" prefWidth="575.0" style="-fx-background-color: #F5F100;" text="CONGRATULATIONS! YOU'VE WON THE GAME!" textFill="#1515bc">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="42.0" layoutY="316.0" mnemonicParsing="false" onAction="#exitButtonClicked" prefHeight="53.0" prefWidth="89.0" style="-fx-background-color: #AC1FE1;" text="EXIT" textFill="#eeeeee">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

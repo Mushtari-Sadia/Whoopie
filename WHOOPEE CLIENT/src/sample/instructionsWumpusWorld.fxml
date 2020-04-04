@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="736.0" prefWidth="999.0" styleClass="instructions" stylesheets="@.instructions.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.instructionsWumpusWorldController">
+   <children>
+      <Label layoutX="208.0" layoutY="53.0" text="INSTRUCTIONS FOR WUMPUS WORLD">
+         <font>
+            <Font name="Berlin Sans FB" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="661.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="61.0" prefWidth="135.0" style="-fx-background-color: #000000;" text="GO BACK" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextArea editable="false" layoutX="116.0" layoutY="121.0" prefHeight="520.0" prefWidth="779.0" text="In the world of the wumpus, there is box of gold hidden.&#10;The adventurer must go into this dangerous world where different obstacles await him.&#10;&#10;The Wumpus is a deadly creature that devours any living being that comes into his range.&#10;The player has no idea where the wumpus is as the position of the wumpus is randomized.&#10;But if the player gets adjacent to the wumpus, he can feel the stench of this deadly creature.&#10;&#10;The player also has to be careful about the pit and the flame.&#10;If he falls into the pit, his adventure comes to the end.&#10;However, he can sense the pit if he is adjacent to it by feeling the breeze flowing beside the pit.&#10;&#10;The flame will burn the adventurer if he falls into it.&#10;Again, the player can sense the presence of the flame if he is close to it, because of the heat emitted by the flame.&#10;&#10;The player shall be given three arrows, with which he can try to kill the wumpus.&#10;But he still cannot remove the pit and the flame.&#10;&#10;Overcoming all these difficulties, the player must find the treasure and achieve victory.">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

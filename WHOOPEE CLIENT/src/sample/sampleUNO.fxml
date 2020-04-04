@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<StackPane fx:id="parentStack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#handleParentStackClicked" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerUNO">
+   <children>
+      <ImageView fx:id="center_imv" fitHeight="800.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@background4.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="text" fill="#eecbe4" strokeType="OUTSIDE" strokeWidth="0.0" text="turn :" textAlignment="JUSTIFY" textOrigin="TOP" translateX="-300.0" translateY="-290.0">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font></Text>
+      <Text fx:id="showColor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="color : " translateY="-300.0">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font></Text>
+      <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <left>
+            <GridPane fx:id="leftGrid" alignment="CENTER" maxHeight="700.0" maxWidth="150.0" minHeight="700.0" minWidth="150.0" prefHeight="700.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="left_imv1" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="left_imv2" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="left_imv3" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="left_imv4" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="left_imv5" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="left_imv6" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="left_imv7" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="90.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </left>
+         <bottom>
+            <GridPane fx:id="bottomGrid" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="bottom_imv1" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="bottom_imv2" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="bottom_imv3" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="bottom_imv4" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="bottom_imv5" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="bottom_imv6" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="bottom_imv7" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="90.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </bottom>
+         <center>
+            <ImageView fx:id="center_imv" fitHeight="298.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <GridPane fx:id="topGrid" alignment="CENTER" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="top_imv1" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="top_imv2" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="top_imv3" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="top_imv4" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="top_imv5" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="top_imv6" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="top_imv7" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="65.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="90.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </top>
+         <right>
+            <GridPane fx:id="rightGrid" alignment="CENTER" maxHeight="700.0" maxWidth="150.0" minHeight="700.0" minWidth="150.0" prefHeight="700.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="right_imv1" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="right_imv2" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="right_imv3" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="right_imv4" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="right_imv5" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="right_imv6" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="right_imv7" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@card_back_large.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="90.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </right>
+      </BorderPane>
+      <Circle fx:id="drawButton" fill="DODGERBLUE" onMouseEntered="#handleDrawMouseEntered" onMouseExited="#handleDrawMouseExited" onMousePressed="#handleDrawMousePressed" radius="50.0" stroke="BLACK" strokeType="INSIDE" translateX="200.0" translateY="100.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="43.59" radius="21.295" width="43.59" />
+         </effect>
+      </Circle>
+      <Text fill="#e1dcdc" fontSmoothingType="LCD" stroke="#5b00ff" strokeType="OUTSIDE" strokeWidth="2.0" text="Draw" textAlignment="JUSTIFY" translateX="200.0" translateY="100.0">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Text>
+      <Circle fx:id="unoButton" fill="#ff1f1f" onMouseEntered="#handleUnoMouseEntered" onMouseExited="#handleUnoMouseExited" onMousePressed="#handleUnoMousePressed" radius="50.0" stroke="BLACK" strokeType="INSIDE" translateX="-200.0" translateY="100.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="43.59" radius="21.295" width="43.59" />
+         </effect>
+      </Circle>
+      <Text fill="#e1dcdc" fontSmoothingType="LCD" stroke="#5b00ff" strokeType="OUTSIDE" strokeWidth="2.0" text="UNO" textAlignment="JUSTIFY" translateX="-200.0" translateY="100.0">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="chooseColor" arcHeight="100.0" arcWidth="100.0" disable="true" height="200.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" visible="false" width="400.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#000000e9" />
+                  <Stop color="#0a1e2f" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Circle fx:id="blueColor" disable="true" fill="DODGERBLUE" radius="30.0" stroke="BLACK" strokeType="INSIDE" translateX="-130.0" translateY="10.0" visible="false" />
+      <Text fx:id="colorTxt" fill="#ffebeb" strokeType="OUTSIDE" strokeWidth="0.0" text="CHOOSE COLOR" textAlignment="JUSTIFY" translateX="5.0" translateY="-50.0" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+      <Circle fx:id="redColor" disable="true" fill="#ff1f1f" radius="30.0" stroke="BLACK" strokeType="INSIDE" translateX="-40.0" translateY="10.0" visible="false" />
+      <Text fx:id="winText" fill="#faf7ff" fontSmoothingType="LCD" stroke="#8880cf" strokeType="OUTSIDE" strokeWidth="5.0" text="YOU HAVE WON!!!" textAlignment="JUSTIFY" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="84.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="closeButton" arcHeight="100.0" arcWidth="100.0" disable="true" fill="#ff1fbc" height="100.0" onMouseClicked="#handleWin" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" translateY="100.0" visible="false" width="150.0" />
+      <Circle fx:id="greenColor" disable="true" fill="#80cf9e" radius="30.0" stroke="BLACK" strokeType="INSIDE" translateX="50.0" translateY="10.0" visible="false" />
+      <Circle fx:id="yellowColor" disable="true" fill="#fffc1f" radius="30.0" stroke="BLACK" strokeType="INSIDE" translateX="140.0" translateY="10.0" visible="false" />
+      <Rectangle fx:id="waitBox" arcHeight="100.0" arcWidth="100.0" fill="#ff1ff5" height="200.0" opacity="0.59" stroke="#5e1542" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="400.0" />
+      <Text fx:id="waitText" fill="#dadada" fontSmoothingType="LCD" strokeType="OUTSIDE" text="Waiting for other players to connect..." textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerIdText" fill="#eecbe4" fontSmoothingType="LCD" strokeType="OUTSIDE" text="player" textAlignment="CENTER" translateX="300.0" translateY="-290.0" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="closeText" disable="true" fill="#e1dcdc" fontSmoothingType="LCD" stroke="#5b00ff" strokeType="OUTSIDE" strokeWidth="2.0" text="CLOSE" textAlignment="JUSTIFY" translateY="100.0" visible="false">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="leftSizeText" fill="#e1d5de" rotate="270.0" stroke="#17570f" strokeType="OUTSIDE" strokeWidth="2.0" text="Cards Left : 7" textAlignment="JUSTIFY" textOrigin="TOP" translateX="-400.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="rightSizeText" fill="#e1d5de" rotate="90.0" stroke="#17570f" strokeType="OUTSIDE" strokeWidth="2.0" text="Cards Left : 7" textAlignment="JUSTIFY" textOrigin="TOP" translateX="385.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="bottomSizeText" fill="#e1d5de" stroke="#17570f" strokeType="OUTSIDE" strokeWidth="2.0" text="Cards Left : 7" textAlignment="JUSTIFY" textOrigin="TOP" translateY="260.0" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="topSizeText" fill="#e1d5de" stroke="#17570f" strokeType="OUTSIDE" strokeWidth="2.0" text="Cards Left : 7" textAlignment="JUSTIFY" textOrigin="TOP" translateY="-260.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</StackPane>

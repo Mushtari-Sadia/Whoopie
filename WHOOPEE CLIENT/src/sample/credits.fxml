@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="647.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.creditsController">
+   <children>
+      <ImageView fitHeight="647.0" fitWidth="868.0" layoutX="-2.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@creditsBackGround.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="262.0" fitWidth="218.0" layoutX="174.0" layoutY="96.0" pickOnBounds="true">
+         <image>
+            <Image url="@leader.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="262.0" fitWidth="229.0" layoutX="495.0" layoutY="96.0" pickOnBounds="true">
+         <image>
+            <Image url="@follower.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="180.0" layoutY="406.0" text="MUSHTARI SADIA" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="456.0" text="STUDENT ID: 1705037" textFill="#fffefe">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="495.0" layoutY="406.0" text="FARDIN HOSSAIN" textFill="#f2eeee">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="495.0" layoutY="465.0" text="STUDENT ID: 1705038 " textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="50.0" layoutY="528.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="55.0" prefWidth="149.0" style="-fx-background-color: #000000;" text="GO BACK" textFill="#f8f8f8">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

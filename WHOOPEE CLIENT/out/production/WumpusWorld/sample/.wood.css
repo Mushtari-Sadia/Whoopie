@@ -1,0 +1,4 @@
+.wood{
+    -fx-background-image: url("lightWood.jpg");
+    -fx-background-size: 100% 100%;
+}
